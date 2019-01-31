@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": " cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "lint": "npx eslint src",
+    "lint": "npx eslint --config .eslintrc.js ./src/* --fix",
     "build": "cross-env NODE_ENV=product  webpack --config webpack.config.js --progress",
     "size": " cross-env NODE_ENV=analyzer webpack --config webpack.config.js --progress"
   },

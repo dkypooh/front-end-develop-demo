@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-module.exports = {
+const config = {
   mode: 'development',
   entry: {
     bundle: path.resolve(__dirname, './index.js')
@@ -30,3 +31,14 @@ module.exports = {
     compress: true
   }
 };
+
+console.warn('current environment is', process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'development') {
+  config.mode = 'development';
+} else if (process.env.NODE_ENV === 'analyzer') {
+  config.plugins.push(
+    new BundleAnalyzerPlugin()
+  );
+}
+
+module.exports = config;
