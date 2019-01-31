@@ -4,6 +4,10 @@ function greeter(person: string): string {
   return "Hello, " + person;
 }
 
+const testAbc = (a: string) :string => {
+  return a;
+}
+
 const config = {
   name: 'xx',
   age: 12,

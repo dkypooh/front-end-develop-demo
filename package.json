@@ -1,0 +1,23 @@
+{
+  "name": "front-end-develop-demo",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  },
+  "description": "front-end develop demos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkypooh/front-end-develop-demo.git"
+  },
+  "author": "matrix2012",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkypooh/front-end-develop-demo/issues"
+  },
+  "homepage": "https://github.com/dkypooh/front-end-develop-demo#readme"
+}

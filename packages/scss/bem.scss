@@ -1,0 +1,13 @@
+.m-card {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    line-height: 30px
+  }
+  &__body {
+    line-height: 20px;
+    p {
+      margin: 0
+    }
+  }
+}
