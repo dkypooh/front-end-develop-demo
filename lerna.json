@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "base/*",
+    "senior/*"
   ],
   "version": "0.0.0",
   "npmClient": "cnpm"
