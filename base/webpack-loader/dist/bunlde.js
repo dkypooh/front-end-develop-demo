@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const json = __webpack_require__(/*! ./package.json */ \"./package.json\")\n\ndocument.write(JSON.stringify(json));\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("const json = __webpack_require__(/*! ./package.json */ \"./package.json\")\nconst tpl = __webpack_require__(/*! ./index.tpl */ \"./index.tpl\");\n\ndocument.write(JSON.stringify(json));\ndocument.body.innerHTML += tpl;\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./index.tpl":
+/*!*******************!*\
+  !*** ./index.tpl ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = '## set age exampleset age : 1'\n\n//# sourceURL=webpack:///./index.tpl?");
 
 /***/ }),
 
@@ -104,7 +115,7 @@ eval("const json = __webpack_require__(/*! ./package.json */ \"./package.json\")
 /*! exports provided: name, version, description, main, scripts, author, license, devDependencies, default */
 /***/ (function(module) {
 
-eval("module.exports = {\"name\":\"webpack-loader\",\"version\":\"1.0.0\",\"description\":\"\",\"main\":\"webpack.config.js\",\"scripts\":{\"test\":\"echo \\\"Error: no test specified\\\" && exit 1\",\"pack\":\"webpack --config webpack.config.js\",\"server\":\"webpack-dev-server --config webpack.config.js --port 3000 --content-base ./dist --open 'Safari' --progress \"},\"author\":\"\",\"license\":\"ISC\",\"devDependencies\":{\"webpack\":\"^4.29.0\",\"webpack-cli\":\"^3.2.1\",\"webpack-dev-server\":\"^3.1.14\"}};\n\n//# sourceURL=webpack:///./package.json?");
+eval("module.exports = {\"name\":\"webpack-loader\",\"version\":\"1.0.0\",\"description\":\"\",\"main\":\"webpack.config.js\",\"scripts\":{\"start\":\"cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --port 3000 --content-base ./dist --open 'Safari' --progress \",\"loader\":\"cross-env DEBUG=* node pack.js\",\"build\":\"webpack --config webpack.config.js\"},\"author\":\"\",\"license\":\"ISC\",\"devDependencies\":{\"cross-env\":\"^5.2.0\",\"debug\":\"^4.1.1\",\"webpack\":\"^4.29.0\",\"webpack-cli\":\"^3.2.1\",\"webpack-dev-server\":\"^3.1.14\"}};\n\n//# sourceURL=webpack:///./package.json?");
 
 /***/ })
 

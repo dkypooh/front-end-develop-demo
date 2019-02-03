@@ -7,4 +7,3 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<Hello />, rootElement);
 
 
-var eqeqeq = ["error","unix"];
