@@ -12,7 +12,9 @@ export function	uuid() {
 			.toString(16);
 	}
 
-	return uuid;
+  return uuid;
+
+
 }
 
 export function pluralize(count, word) {

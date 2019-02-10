@@ -1,7 +1,7 @@
 {
   "ecmaFeatures": {
     "jsx": true,
-    "modules": true
+    "modules": true,
   },
   "extends": "eslint:recommended",
   "env": {
@@ -15,6 +15,12 @@
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecotators": true,
+      "experimentalObjectRestSpread": true
+    }
   },
   "plugins": [
     "react"

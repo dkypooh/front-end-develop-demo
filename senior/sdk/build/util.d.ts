@@ -1,0 +1,1 @@
+declare const age: string;

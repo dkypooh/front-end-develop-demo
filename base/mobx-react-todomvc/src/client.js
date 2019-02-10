@@ -18,7 +18,3 @@ ReactDOM.render(
 	document.getElementById('todoapp')
 );
 
-
-function getName() {
-
-}

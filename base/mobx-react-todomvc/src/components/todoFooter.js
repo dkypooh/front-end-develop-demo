@@ -9,9 +9,6 @@ import { ALL_TODOS, ACTIVE_TODOS, COMPLETED_TODOS } from '../constants';
 export default class TodoFooter extends React.Component {
 	render() {
 		const todoStore = this.props.todoStore;
-		if (!todoStore.activeTodoCount && !todoStore.completedCount)
-			return null;
-
 		const activeTodoWord = pluralize(todoStore.activeTodoCount, 'item');
 
 		return (

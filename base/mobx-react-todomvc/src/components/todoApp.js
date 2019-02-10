@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {observer} from 'mobx-react';
-
+import { Router } from 'director/build/director'
 import TodoEntry from './todoEntry';
 import TodoOverview from './todoOverview';
 import TodoFooter from './todoFooter';
@@ -24,19 +24,18 @@ export default class TodoApp extends React.Component {
 				<TodoFooter todoStore={todoStore} viewStore={viewStore} />
 			</div>
 		);
-	}
+  }
+
 
 	componentDidMount() {
-		if (true) {
-			var { Router } = require('director/build/director');
-			var viewStore = this.props.viewStore;
-			var router = Router({
-				'/': function() { viewStore.todoFilter = ALL_TODOS; },
-				'/active': function() { viewStore.todoFilter = ACTIVE_TODOS; },
-				'/completed': function() { viewStore.todoFilter = COMPLETED_TODOS; }
-			});
-		 router.init('/');
-		}
+
+    const viewStore = this.props.viewStore;
+    const router = Router({
+      '/': function() { viewStore.todoFilter = ALL_TODOS; },
+      '/active': function() { viewStore.todoFilter = ACTIVE_TODOS; },
+      '/completed': function() { viewStore.todoFilter = COMPLETED_TODOS; }
+    });
+    router.init('/');
 	}
 }
 
