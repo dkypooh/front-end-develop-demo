@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from 'react-dom';
-import Hello from "./src/hello";
+import Root from "./src/index";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Hello />, rootElement);
+ReactDOM.render(<Root />, rootElement);

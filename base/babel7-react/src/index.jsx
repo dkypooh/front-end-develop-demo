@@ -1,11 +1,13 @@
 import React from "react";
+import Add from './components/add';
+import ShowLayer from './components/show';
 
 export default class extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <h1>Hello boy</h1>
-        <h2>Welcome</h2>
+        <Add />
+        <ShowLayer />
       </div>
     );
   }

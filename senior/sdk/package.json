@@ -4,7 +4,7 @@
   "description": "sdk, middleware",
   "main": "build/index.js",
   "scripts": {
-    "build:ts": "npx tsc --build tsconfig.json -w",
+    "build": "npx tsc --build tsconfig.json -w",
     "test": "npx jest -c jest.config.js --colors",
     "fix": "tslint --fix src/*.ts -t verbose",
     "tslint": "tslint -c tslint.json src/*.ts"

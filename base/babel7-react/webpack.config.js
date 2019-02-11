@@ -5,7 +5,8 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 
 const config = {
-  mode: 'production',
+  mode: 'development',
+  devtool: 'eval',
   entry: {
     bundle: path.resolve(__dirname, './index.js')
   },
