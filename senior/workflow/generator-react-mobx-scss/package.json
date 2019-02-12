@@ -1,12 +1,10 @@
 {
-  "name": "generator-react-workflow",
-  "version": "0.0.0",
+  "name": "generator-react-mobx-scss",
+  "version": "0.0.1",
   "description": "react scaffold Component automatic",
-  "homepage": "",
   "author": {
     "name": "matrix",
-    "email": "18967131010@163.com",
-    "url": ""
+    "email": "18967131010@163.com"
   },
   "files": [
     "generators"
