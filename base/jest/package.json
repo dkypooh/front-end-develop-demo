@@ -4,8 +4,6 @@
   "description": "jest, react",
   "main": "index.js",
   "scripts": {
-    "test:ui": "",
-    "test:sdk": "",
     "test": "npx jest"
   },
   "author": "",
