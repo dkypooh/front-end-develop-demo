@@ -1,0 +1,26 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "jest, react",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "",
+    "test:sdk": "",
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "babel-jest": "*",
+    "enzyme": "*",
+    "enzyme-adapter-react-16": "*",
+    "jest": "*"
+  }
+}

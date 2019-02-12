@@ -1,7 +1,8 @@
 {
   "applicationName": "sdk document",
   "plugins": [
-    "plugins/markdown"
+    "plugins/markdown",
+    "plugins/summarize"
   ],
   "source": {
     "include": [
