@@ -1,10 +1,11 @@
 {
-  "name": "eslint-test",
+  "name": "<%= answers.name %>",
   "version": "1.0.0",
-  "description": "",
+  "description": "<%= answers.description %>",
+  "author": "<%= answers.username %> <% if(answers.email){ %><<%= answers.email %>><% } %>",
   "main": "index.js",
   "scripts": {
-    "start": " cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "start": " cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js --open 'Chrome' --progress",
     "lint": "npx eslint --config .eslintrc.js ./src/* --fix",
     "build": "cross-env NODE_ENV=production  webpack --config webpack.config.js --progress",
     "size": " cross-env NODE_ENV=analyzer webpack --config webpack.config.js --progress"

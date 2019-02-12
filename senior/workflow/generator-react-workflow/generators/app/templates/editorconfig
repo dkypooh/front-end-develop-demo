@@ -1,0 +1,14 @@
+# 所有文件匹配
+[*]
+indent_style = space                # 缩进样式
+end_of_line = lf                    # 结束换行，cr回车
+indent_size = 2                     # 缩进2个空格
+charset = utf-8                     # 文件utf-8编码
+trim_trailing_whitespace = true     # 去掉末尾空格
+insert_final_newline = true         # 在最后插入一个新行
+
+# md文件匹配
+[*.md]
+trim_trailing_whitespace = false    # 取消去掉末尾空格
+
+
