@@ -1,0 +1,22 @@
+{
+  "applicationName": "sdk document",
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "source": {
+    "include": [
+      "./src/"
+    ],
+    "includePattern": ".+\\.js(md)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "encoding": "utf8",
+    "recurse": true,
+    "destination": "./build",
+    "template": "./node_modules/ink-docstrap/template"
+  },
+  "templates": {
+    "theme": ""
+  }
+}

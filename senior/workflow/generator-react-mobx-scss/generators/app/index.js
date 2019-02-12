@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Generator = require('yeoman-generator')
 
 class gen extends Generator {
@@ -7,7 +8,6 @@ class gen extends Generator {
   }
 
   initializing() {
-
     try {
       this.username = process.env.USER || process.env.USERPROFILE.split(require('path').sep)[2]
     } catch (e) {
@@ -16,7 +16,6 @@ class gen extends Generator {
   }
 
   prompting() {
-
     return this.prompt([
       {
         type: 'input',
