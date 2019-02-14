@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function App() {
-  // Declare a new state variable, which we'll call "count"
+function UseEffect() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
+
   return (
-    <div class="App">
+    <div>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Click me
@@ -13,4 +16,5 @@ function App() {
     </div>
   );
 }
-export default App;
+
+export default UseEffect;
