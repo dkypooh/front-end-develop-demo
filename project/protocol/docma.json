@@ -1,0 +1,11 @@
+{
+    "src": [
+        "./src/**/*.js",
+        "./src/*.js",
+        "./README.md"
+    ],
+    "dest": "./build",
+    "template": {
+      "path": "zebra"
+    }
+}
