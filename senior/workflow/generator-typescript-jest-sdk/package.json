@@ -1,12 +1,10 @@
 {
   "name": "generator-typescript-jest-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "typescript, jest, sdk",
-  "homepage": "",
   "author": {
     "name": "matrix",
-    "email": "18967131010@163.com",
-    "url": ""
+    "email": "18967131010@163.com"
   },
   "files": [
     "generators"
