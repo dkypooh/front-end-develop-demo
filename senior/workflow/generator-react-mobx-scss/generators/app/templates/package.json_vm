@@ -1,6 +1,6 @@
 {
   "name": "<%= answers.name %>",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "<%= answers.description %>",
   "author": "<%= answers.username %> <% if(answers.email){ %><<%= answers.email %>><% } %>",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production  webpack --config webpack.config.js --progress",
     "size": " cross-env NODE_ENV=analyzer webpack --config webpack.config.js --progress"
   },
+  "keywords": [<% answers.keywords.split(',').forEach(function(value, index){ %> <%if (index!==0){%>,<%}%>"<%= value.trim() %>" <%})%>],
   "author": "",
   "license": "ISC",
   "devDependencies": {

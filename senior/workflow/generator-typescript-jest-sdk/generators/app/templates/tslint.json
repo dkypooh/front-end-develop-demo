@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint-config-standard"
+  ],
+  "globals": {
+    "lib": true
+  },
+  "rules": {
+      "semicolon": [true, "never"],
+      "interface-name": true,
+      "trailing-comma": false,
+      "indent": [true, "spaces"],
+      "ter-indent": [true, 2],
+      "space-before-function-paren": false,
+      "quotemark": [true, "single", "jsx-double"],
+      "jsx-no-multiline-js": false,
+      "no-empty": false
+  },
+  "rulesDirectory": []
+}
