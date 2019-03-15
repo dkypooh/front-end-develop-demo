@@ -3,8 +3,7 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HappyPack = require('happypack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 
 
@@ -13,7 +12,10 @@ const NODE_MODULES_PATH = path.resolve(__dirname, 'node_modules');
 const config = {
   mode: 'none',
   optimization: {
-    splitChunks: { chunks: 'async', name: true,
+    minimize: false,
+    splitChunks: {
+      chunks: 'async',
+      name: true,
       cacheGroups: {
         vendor: { test: /[\\/]node_modules[\\/]/, name: 'vendor', chunks: 'all', priority: 2, minChunks: 2, }
       }
@@ -54,7 +56,11 @@ if (process.env.NODE_ENV === 'development') {
     new BundleAnalyzerPlugin()
   );
 } else if (process.env.NODE_ENV  === 'production') {
+  config.plugins.push(
+    new OptimizeCSSAssetsPlugin()
+  );
   config.mode = 'production';
+  config.optimization.minimize = true;
 }
 
 module.exports = config;

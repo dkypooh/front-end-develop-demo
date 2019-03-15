@@ -1,0 +1,26 @@
+{
+  "name": "tbms-util",
+  "version": "0.0.1",
+  "description": "tbms, util",
+  "author": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx tsc --build tsconfig.json -w",
+    "test": "npx jest -c jest.config.js --colors",
+    "fix": "tslint --fix src/*.ts -t verbose",
+    "tslint": "tslint -c tslint.json src/*.ts"
+  },
+  "keywords": [
+    "tbms",
+    "util"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.3.14",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.3.1"
+  }
+}
