@@ -1,33 +1,35 @@
 {
-  "name": "mobx-counter-example",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "name": "mobx-counter",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "mobx": "5.0.3",
-    "mobx-react": "5.2.3",
-    "react": "16.3.2",
-    "react-dom": "16.3.2",
-    "react-scripts": "1.1.4"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.3.0",
-    "@babel/preset-stage-1": "^7.0.0"
-  },
-  "babel": {
-    "plugins": [
-      "@babel/plugin-proposal-decorators"
-    ],
-    "presets": [
-      "react-app",
-      "@babel/preset-stage-1"
-    ]
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+      ["@babel/plugin-proposal-decorators",{ "legacy": true }]
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-env": "^7.3.4"
   }
 }
