@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-stage-1"],
+  "plugins": ["@babel/plugin-proposal-decorators"]
+}
