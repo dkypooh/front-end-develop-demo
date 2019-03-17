@@ -22,7 +22,6 @@ class App extends React.Component {
         <h1>Hello CodeSandbox</h1>
         <h2>Start editing to see some magic happen!</h2>
         <p onClick={() => store.inc()}>{store.count}</p>
-        <p onClick={() => store.inc(3)}>{store.count}</p>
       </div>
     );
   }
@@ -32,7 +31,6 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={new Store()}>
     <div>
-      <App />
       <App />
     </div>
   </Provider>,
