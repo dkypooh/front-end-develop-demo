@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sub/Pub</title>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #tap {
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      color: #FFF;
+    }
+  </style>
+</head>
+<body>
+  <div id="tap"> Sub/Pub </div>
+
+  <script>
+    const node = document.getElementById('tap');
+
+    node.addEventListener('cat', (result) => {
+      console.log(result.detail);
+    })
+
+    node.addEventListener('click', () => {
+      const event = new CustomEvent("cat", {"detail":{"hazcheeseburger":true}})
+      node.dispatchEvent(event);
+    })
+
+  </script>
+</body>
+</html>

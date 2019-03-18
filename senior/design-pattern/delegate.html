@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delegate</title>
+</head>
+
+<body>
+  <div class="t3">document
+    <div class="t2">html
+      <div class="t1">body
+        <div class="t0">div</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var $t0 = document.getElementsByClassName('t0')[0];
+    var $t1 = document.getElementsByClassName('t1')[0];
+    var $t2 = document.getElementsByClassName('t2')[0];
+    var $t3 = document.getElementsByClassName('t3')[0];
+
+    $t0.addEventListener("click", function () {
+      console.log("click div")
+    }, false);
+
+    $t1.addEventListener("click", function () {
+      console.log("click body")
+    }, false);
+
+    $t2.addEventListener("click", function () {
+      console.log("click html")
+    }, false);
+
+    $t3.addEventListener("click", function () {
+      console.log("click document")
+    }, false);
+  </script>
+</body>
+
+</html>
