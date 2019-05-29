@@ -2,6 +2,40 @@
 
 ![](https://user-gold-cdn.xitu.io/2019/5/28/16afa1fcc4da6a40?w=3248&h=1246&f=png&s=595966)
 
+### 仓库目录导引
+
+```
+.
+├── LICENSE
+├── README.md
+├── base                        
+│   ├── babel6-react      // babel6-react 项目
+│   ├── babel7-react      // babel7-react 项目
+│   ├── git               // Git 项目管理
+│   ├── jest              // Jest 前端测试框架
+│   ├── jsdoc             // JsDoc 文档管理
+│   ├── lerna             // lerna 管理
+│   ├── mobx-counter      // mobx 实现计数器实例
+│   ├── react-feature     // react 的hooks, Portals等实例
+│   ├── react-mobx-scss   // react-mobx-scss 项目脚手架
+│   ├── redux-counter     // redux 计数器版本
+│   ├── scss              // scss 环境，以及CSS 面向对象实例
+│   ├── typescript        // typescript 案例
+│   └── webpack-loader    // webpack loader 案例
+├── download
+│   ├── css               // CSS sheet 资料
+│   ├── git               // git 资料
+│   ├── javacript         // javascript 资料
+│   ├── javascript-promise-book.pdf   // javascript promise 资料
+├── issue_template.md
+├── lerna.json
+├── package.json
+└── senior
+    ├── design-pattern    // 设计模式案例
+    ├── sdk               // SDK设计案例
+    └── workflow          // 工作流案例
+```
+
 ### 一起来实现仿微信聊天
 通过本册学习，读者可以从入门到深入，全方位了解前端全链路开发所需的各项知识和技能，并且在每个知识点都提供了源码实例，可以看着源码学习事半功倍，最后项目最佳实践一步步实现一个聊天系统。
 
@@ -65,9 +99,6 @@ https://share.weiyun.com/54JgGBc
 
 ![](https://user-gold-cdn.xitu.io/2019/2/14/168eba75c8132ba3?w=2414&h=899&f=png&s=120804)
 
-## 作者介绍
-
-![](https://user-gold-cdn.xitu.io/2019/5/28/16afa2293e0cb366?w=2100&h=660&f=png&s=1240025)
 
 
 ## 你能学到什么？
