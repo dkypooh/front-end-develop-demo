@@ -3,8 +3,8 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HappyPack = require('happypack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 
@@ -50,6 +50,7 @@ console.warn('current environment is', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   config.mode = 'development';
 } else if (process.env.NODE_ENV === 'analyzer') {
+  config.mode = 'production';
   config.plugins.push(
     new BundleAnalyzerPlugin()
   );

@@ -52,6 +52,7 @@ console.warn('current environment is', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   config.mode = 'development';
 } else if (process.env.NODE_ENV === 'analyzer') {
+  config.mode = 'production';
   config.plugins.push(
     new BundleAnalyzerPlugin()
   );
