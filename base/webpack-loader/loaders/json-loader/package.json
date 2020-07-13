@@ -8,7 +8,7 @@
     "release": "standard-version"
   },
   "devDependencies": {
-    "standard-version": "^4.2.0"
+    "standard-version": "^8.0.1"
   },
   "repository": {
     "type": "git",
